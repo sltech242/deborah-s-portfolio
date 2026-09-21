@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deborah Paul | Collection</title>
+  <style>
+    :root{
+      --bg: #12071F;
+      --card: rgba(255,255,255,.06);
+      --text: #F5F0FF;
+      --muted: rgba(245,240,255,.78);
+      --accent: #FF5DA2;
+      --accent2: #C77DFF;
+      --border: rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #12071F, #2A0B2F);
+      color: var(--text);
+    }
+    header{
+      position: sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(18,7,31,.7);
+      border-bottom: 1px solid var(--border);
+    }
+    nav{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .brand strong{font-size:16px}
+    .brand span{font-size:12px;color:var(--muted)}
+    .nav-links{display:flex; gap:10px; flex-wrap:wrap;}
+    .nav-links a{
+      text-decoration:none;
+      color: var(--text);
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid transparent;
+      transition:.2s;
+      font-size:14px;
+    }
+    .nav-links a:hover{
+      border-color: rgba(255,93,162,.45);
+      background: rgba(255,93,162,.12);
+    }
+    .container{max-width:1000px;margin:0 auto;padding:34px 18px 60px;}
+    .page-title{
+      margin:0 0 10px;
+      font-size: 34px;
+    }
+    .intro{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 18px 8px;
+      margin-bottom: 18px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr;}}
+    .card{
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      min-height: 190px;
+    }
+    .tag{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(199,125,255,.14);
+      border: 1px solid rgba(199,125,255,.35);
+      color: var(--text);
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .card h3{margin:0 0 8px; font-size: 18px}
+    .card p{margin:0;color:var(--muted);line-height:1.6}
+    .small-note{
+      color: var(--muted);
+      margin-top: 14px;
+      font-size: 14px;
+      line-height:1.6;
+    }
+    footer{
+      border-top: 1px solid var(--border);
+      padding: 18px;
+      color: var(--muted);
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="brand">
+      <strong>Deborah Paul</strong>
+      <span>Perfume Company • Collection</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Collection</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <h2 class="page-title">What Deborah Paul sells</h2>
+
+  <section class="intro">
+    <p>
+      Each fragrance is designed to create a distinct mood—fresh and bright, floral and romantic, or warm and sensual.
+      Here are brief insights into the styles you can expect.
+    </p>
+  </section>
+
+  <section class="grid" aria-label="Perfume collection">
+    <article class="card">
+      <div class="tag">Fresh • Clean • Radiant</div>
+      <h3>Daylight Bloom</h3>
+      <p>
+        A crisp start with airy freshness, softened by delicate floral heart notes—finished with a smooth, subtle base
+        that feels effortless all day.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="tag">Floral • Romantic</div>
+      <h3>Velvet Petals</h3>
+      <p>
+        Elegant rose and blooming petals with a refined, creamy warmth underneath—perfect for evenings and memorable entrances.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="tag">Warm • Sensual • Signature</div>
+      <h3>Midnight Silk</h3>
+      <p>
+        Deep, comforting notes that unfold slowly—balanced between sensual sweetness and a polished, long-lasting finish.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="tag">Citrus • Bright • Confident</div>
+      <h3>Golden Citrus Charm</h3>
+      <p>
+        Bright top notes that lift the mood quickly, transitioning into a fragrant floral-woody blend that stays close and classy.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="tag">Soft • Elegant • Everyday Luxury</div>
+      <h3>Chiffon Whisper</h3>
+      <p>
+        A gentle, wearable scent with smooth floral edges and a calm base—ideal for daily comfort and understated sophistication.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="tag">Exotic • Bold • Long-Lasting</div>
+      <h3>Amber Desire</h3>
+      <p>
+        A richer profile featuring warm amber warmth and captivating depth—made to linger and leave a memorable trail.
+      </p>
+    </article>
+  </section>
+
+  <div class="small-note">
+    Want recommendations? Send a message in <a href="contact.html" style="color: #FFB3D3;">Contact Us</a> and Deborah Paul can help you find your match.
+  </div>
+</main>
+
+<footer>
+  © <span id="year"></span> Deborah Paul Perfume Company. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

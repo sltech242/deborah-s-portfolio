@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deborah Paul Portfolio</title>
+  <style>
+    :root{
+      --bg: #0F0B1B;          /* deep night purple */
+      --card: rgba(255,255,255,.06);
+      --text: #F5F0FF;
+      --muted: rgba(245,240,255,.78);
+      --accent: #C77DFF;     /* lavender */
+      --accent2: #FF5DA2;    /* rose */
+      --border: rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #0F0B1B, #1A1033);
+      color: var(--text);
+    }
+    header{
+      position: sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(15,11,27,.7);
+      border-bottom: 1px solid var(--border);
+    }
+    nav{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .brand{
+      display:flex; flex-direction:column; line-height:1.1;
+    }
+    .brand strong{font-size:16px}
+    .brand span{font-size:12px;color:var(--muted)}
+    .nav-links{
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .nav-links a{
+      text-decoration:none;
+      color: var(--text);
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid transparent;
+      background: transparent;
+      transition:.2s;
+      font-size:14px;
+    }
+    .nav-links a:hover{
+      border-color: rgba(199,125,255,.45);
+      background: rgba(199,125,255,.12);
+    }
+    .container{
+      max-width:1000px;
+      margin: 0 auto;
+      padding: 34px 18px 60px;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+      align-items:stretch;
+    }
+    @media (max-width: 850px){ .hero{grid-template-columns:1fr;} }
+    .hero-card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+    }
+    h1{
+      margin:0 0 10px;
+      font-size: 40px;
+      letter-spacing: .3px;
+    }
+    p{margin:0 0 14px;color:var(--muted); line-height:1.6}
+    .cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:10px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 12px 16px;
+      border-radius: 12px;
+      text-decoration:none;
+      font-weight:600;
+      border:1px solid var(--border);
+      transition:.2s;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(199,125,255,.95), rgba(255,93,162,.85));
+      border-color: rgba(255,255,255,.18);
+      color:#120817;
+    }
+    .btn.primary:hover{ transform: translateY(-1px); }
+    .btn.secondary{
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+    }
+    .btn.secondary:hover{
+      border-color: rgba(199,125,255,.45);
+      background: rgba(199,125,255,.10);
+      transform: translateY(-1px);
+    }
+    .side-list{
+      margin:0; padding:0; list-style:none;
+      display:flex; flex-direction:column; gap:12px;
+    }
+    .side-item{
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+    }
+    .side-item b{display:block;margin-bottom:6px}
+    footer{
+      border-top: 1px solid var(--border);
+      padding: 18px;
+      color: var(--muted);
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="brand">
+      <strong>Deborah Paul</strong>
+      <span>Perfume Company • Oyinla's Marque</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Collection</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Luxury fragrance, crafted to feel personal.</h1>
+      <p>
+        Deborah Paul creates refined perfumes with captivating top notes, elegant heart layers, and long-lasting base warmth—
+        designed for everyday confidence and special moments.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="products.html">Explore the Collection</a>
+        <a class="btn secondary" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+
+    <aside class="hero-card">
+      <ul class="side-list">
+        <li class="side-item">
+          <b>What you’ll find</b>
+          <span style="color:var(--muted);line-height:1.6;">
+            Floral elegance, warm sensual notes, and fresh clean finishes.
+          </span>
+        </li>
+        <li class="side-item">
+          <b>Designed to last</b>
+          <span style="color:var(--muted);line-height:1.6;">
+            Balanced compositions for smooth wear from day to night.
+          </span>
+        </li>
+        <li class="side-item">
+          <b>Made to stand out</b>
+          <span style="color:var(--muted);line-height:1.6;">
+            Signature blends that feel unique—never generic.
+          </span>
+        </li>
+      </ul>
+    </aside>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Deborah Paul Perfume Company. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

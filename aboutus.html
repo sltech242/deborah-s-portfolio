@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deborah Paul | About</title>
+  <style>
+    :root{
+      --bg: #0F0B1B;
+      --card: rgba(255,255,255,.06);
+      --text: #F5F0FF;
+      --muted: rgba(245,240,255,.78);
+      --accent: #C77DFF;
+      --accent2: #FF5DA2;
+      --border: rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #0F0B1B, #1A1033);
+      color: var(--text);
+    }
+    header{
+      position: sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(15,11,27,.7);
+      border-bottom: 1px solid var(--border);
+    }
+    nav{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .nav-links{display:flex; gap:10px; flex-wrap:wrap;}
+    .nav-links a{
+      text-decoration:none;
+      color: var(--text);
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid transparent;
+      transition:.2s;
+      font-size:14px;
+    }
+    .nav-links a:hover{
+      border-color: rgba(199,125,255,.45);
+      background: rgba(199,125,255,.12);
+    }
+    .container{max-width:1000px;margin:0 auto;padding:34px 18px 60px;}
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      line-height:1.7;
+      color: var(--muted);
+    }
+    h2{margin:0 0 10px; color: var(--text)}
+    footer{
+      border-top: 1px solid var(--border);
+      padding: 18px;
+      color: var(--muted);
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="brand">
+      <strong>Deborah Paul</strong>
+      <span>Perfume Company • About</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Collection</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2>About Deborah Paul</h2>
+    <p>
+      Deborah Paul is the creative owner behind a perfume company built around mood, memory, and personal style.
+      Every collection is designed to feel luxurious without being overwhelming—balanced notes, smooth transitions,
+      and a finish that lingers beautifully.
+    </p>
+    <p>
+      Whether you love fresh florals, warm amber warmth, or bold evening profiles, Deborah Paul’s fragrances are made
+      to help you express who you are—one spray at a time.
+    </p>
+  </div>
+</main>
+
+<footer>
+  © <span id="year"></span> Deborah Paul Perfume Company. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
